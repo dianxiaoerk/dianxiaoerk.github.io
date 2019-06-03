@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Waiter</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://dianxiaoerk.github.io/"/>
   <updated>2019-06-03T13:58:36.640Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://dianxiaoerk.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Wine</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>c</title>
-    <link href="http://yoursite.com/c/"/>
-    <id>http://yoursite.com/c/</id>
+    <link href="https://dianxiaoerk.github.io/c/"/>
+    <id>https://dianxiaoerk.github.io/c/</id>
     <published>2019-06-03T13:58:26.000Z</published>
     <updated>2019-06-03T13:58:36.640Z</updated>
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/hello-world/"/>
-    <id>http://yoursite.com/hello-world/</id>
+    <link href="https://dianxiaoerk.github.io/hello-world/"/>
+    <id>https://dianxiaoerk.github.io/hello-world/</id>
     <published>2019-06-03T13:57:16.392Z</published>
     <updated>2019-06-03T13:57:16.392Z</updated>
     
@@ -61,8 +61,8 @@
   
   <entry>
     <title>b</title>
-    <link href="http://yoursite.com/b/"/>
-    <id>http://yoursite.com/b/</id>
+    <link href="https://dianxiaoerk.github.io/b/"/>
+    <id>https://dianxiaoerk.github.io/b/</id>
     <published>2019-06-02T06:59:51.000Z</published>
     <updated>2019-06-03T13:57:16.392Z</updated>
     
@@ -83,8 +83,8 @@
   
   <entry>
     <title>模板</title>
-    <link href="http://yoursite.com/%E6%A8%A1%E6%9D%BF/"/>
-    <id>http://yoursite.com/模板/</id>
+    <link href="https://dianxiaoerk.github.io/%E6%A8%A1%E6%9D%BF/"/>
+    <id>https://dianxiaoerk.github.io/模板/</id>
     <published>2019-06-02T06:25:22.000Z</published>
     <updated>2019-06-03T13:57:16.393Z</updated>
     

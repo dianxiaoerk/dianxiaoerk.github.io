@@ -10,14 +10,15 @@
   {% if theme.post_wordcount.totalcount %}
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
     </span>
     {% if theme.post_wordcount.item_text %}
       <span class="post-meta-item-text">{{ __('post.totalcount') }}&#58;</span>
     {% endif %}
     <span title="{{ __('post.totalcount') }}">{#
     #}{{ totalcount(site, '0,0.0a') }}{#
-  #}</span>
+  #}
+  <i class="fa fa-pencil-square-o"></i>
+  </span>
   {% endif %}
 </div>
 
@@ -30,7 +31,6 @@
 {% if theme.footer.powered and theme.footer.theme.enable %}
   <span class="post-meta-divider">|</span>
 {% endif %}
-
 {% if theme.footer.theme.enable %}
   <div class="theme-info">{#
   #}{{ __('footer.theme') }} &mdash; {#
@@ -39,7 +39,6 @@
   #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}</div>
 {% endif %}
-
 {% if theme.footer.custom_text %}
   <div class="footer-custom">{#
   #}{{ theme.footer.custom_text }}{#

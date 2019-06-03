@@ -1,5 +1,4 @@
 {% if theme.font.enable %}
-
   {% set font_config = theme.font %}
   {% set font_families = '' %}
   {% set font_styles = ':300,300italic,400,400italic,700,700italic' %}

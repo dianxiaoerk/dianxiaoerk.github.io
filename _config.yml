@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo #网站标题
+title: Waiter #网站标题
 subtitle: #网站副标题
 description: #网站描述
 keywords: #关键字
-author: John Doe #作者名字
+author: Wine #作者名字
 language: zh-Hans #网站使用的语言
 timezone: #网站时区  默认使用电脑的
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com #网址
+url: https://dianxiaoerk.github.io/ #网址
 root: / #网站根目录
 permalink: :title/ #文章的永久链接格式
 permalink_defaults: #永久链接中各部分的默认值
