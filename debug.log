@@ -1,0 +1,25 @@
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Writing database to F:\\OWN\\myBlog/db.json","time":"2019-06-02T04:51:37.583Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Hexo version: \u001b[35m3.8.0\u001b[39m","time":"2019-06-02T04:51:37.615Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Working directory: \u001b[35mF:\\OWN\\myBlog\\\u001b[39m","time":"2019-06-02T04:51:37.617Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Config loaded: \u001b[35mF:\\OWN\\myBlog\\_config.yml\u001b[39m","time":"2019-06-02T04:51:37.832Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-archive\u001b[39m","time":"2019-06-02T04:51:37.869Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-category\u001b[39m","time":"2019-06-02T04:51:37.873Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-tag\u001b[39m","time":"2019-06-02T04:51:37.877Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-index\u001b[39m","time":"2019-06-02T04:51:37.879Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-ejs\u001b[39m","time":"2019-06-02T04:51:37.886Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-marked\u001b[39m","time":"2019-06-02T04:51:37.896Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-symbols-count-time\u001b[39m","time":"2019-06-02T04:51:37.897Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-server\u001b[39m","time":"2019-06-02T04:51:38.004Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-stylus\u001b[39m","time":"2019-06-02T04:51:38.006Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\merge-configs.js\u001b[39m","time":"2019-06-02T04:51:38.018Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\button.js\u001b[39m","time":"2019-06-02T04:51:38.019Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\center-quote.js\u001b[39m","time":"2019-06-02T04:51:38.020Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\exturl.js\u001b[39m","time":"2019-06-02T04:51:38.023Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\full-image.js\u001b[39m","time":"2019-06-02T04:51:38.023Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\label.js\u001b[39m","time":"2019-06-02T04:51:38.024Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\lazy-image.js\u001b[39m","time":"2019-06-02T04:51:38.025Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\note.js\u001b[39m","time":"2019-06-02T04:51:38.025Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\tabs.js\u001b[39m","time":"2019-06-02T04:51:38.026Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\group-pictures.js\u001b[39m","time":"2019-06-02T04:51:38.029Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\merge.js\u001b[39m","time":"2019-06-02T04:51:38.034Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-JOIKD1Q","pid":2844,"level":20,"msg":"Database saved","time":"2019-06-02T04:51:38.045Z","v":0}
