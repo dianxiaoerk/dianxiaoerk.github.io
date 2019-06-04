@@ -10,6 +10,7 @@
   {% if theme.post_wordcount.totalcount %}
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
+    <i class="fa fa-th"></i>
     </span>
     {% if theme.post_wordcount.item_text %}
       <span class="post-meta-item-text">{{ __('post.totalcount') }}&#58;</span>

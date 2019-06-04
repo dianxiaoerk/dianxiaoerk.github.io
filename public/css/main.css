@@ -1663,7 +1663,7 @@ pre .javascript .function {
   max-width: 45em;
   margin: 2.8em auto 0;
   padding: 0.5em 1em;
-  box-shadow: 0px 0px 5px 5px #d3d3d3;
+  box-shadow: 0px 0px 5px 2px #d3d3d3;
   font-size: 0.93rem;
   line-height: 1.6em;
   word-break: break-all;
@@ -1996,7 +1996,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5b0ef4;
+  background: #2ed293;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3078,6 +3078,57 @@ hr {
     text-align: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .header-inner {
+/* 头部标题logo字体样式修改 */
+    width: 100%;
+    padding: 25px 0 0;
+/* 导航条样式修改 */
+  }
+  .header-inner .site-meta {
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+  .header-inner .site-meta .custom-logo-site-title {
+    text-align: center;
+  }
+  .header-inner .site-title {
+    font-size: 45px;
+    transition: 0.5s;
+  }
+  .header-inner .site-title:hover {
+    color: #ff6700;
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+    text-shadow: 5px 5px 5px #808080;
+  }
+  .header-inner .site-nav {
+    color: #f00;
+  }
+  .header-inner .site-nav .menu {
+    float: none;
+  }
+  .header-inner .site-nav .menu .menu-item a {
+    padding: 0 5px;
+    font-size: 18px;
+  }
+  #main .sidebar-toggle {
+    border-radius: 5px;
+  }
+  .back-to-top {
+    border-radius: 5px;
+  }
+  #footer {
+    user-select: none;
+  }
+  #footer .footer-inner {
+    text-align: center;
+  }
+}
 .post {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -3085,9 +3136,76 @@ hr {
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
-* {
-  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword2.ico"), auto !important;
+#music {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40em;
+  height: 4em;
+  border: 1px solid #808080;
+  margin: 0 auto;
+  border-radius: 1em;
+/* 播放/暂停按钮容器 */
 }
-:active {
-  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword1.ico"), auto !important;
+#music .playWay {
+  width: 60px;
+  height: 60px;
+  background: #f00;
+}
+#music .play {
+  background: url("../../images/play.png");
+  background-size: 100%;
+}
+#music .stop {
+  background: url("../../images/stop.png");
+  background-size: 100%;
+}
+#music .playControl {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 700px;
+  height: 60px;
+  background: #f2f2f2;
+}
+#music .playControl .music-control {
+  position: relative;
+  width: 500px;
+}
+#music .playControl .music-control .music-control-background,
+#music .playControl .music-control .music-control-playing {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  height: 3px;
+  border-radius: 20px;
+}
+#music .playControl .music-control .music-control-background {
+  width: 100%;
+  background: #f00;
+}
+#music .playControl .music-control .music-control-playing {
+  z-index: 20;
+  width: 0;
+  background: #ff6700;
+}
+#music .playControl .music-control .music-control-playing .control-rediu {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: -20px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
 }
