@@ -32,7 +32,7 @@ sssssssssssssssssssssssssssssss
         <span class='endTime'>00:00</span>
     </div>
 </main>
-<script src="http://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
 <script>
     //1、声明需要的变量
   var music = document.getElementById('audio'),//获取audio音频标签
