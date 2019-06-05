@@ -1,4 +1,8 @@
 // Custom styles.
+/* 设置根目录的font-size  用来做移动端布局适配 */
+html{
+  font-size: 190.3px;
+}
 
 /* 自适应样式 */
 @media screen and (min-width:768px){
@@ -64,6 +68,7 @@
 
 /* 文章外边框 */
 .post {
+  font-size: 12px;
   margin-top: 60px;
   margin-bottom: 60px;
   padding: 25px;
@@ -73,12 +78,11 @@
 
 /* 音乐文章播放样式 */
 #music{
-  font-size: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 40em;
-  height: 4em;
+  width: 800px;
+  height: 80px;
   border: 1px solid gray;
   margin: 0 auto;
   border-radius: 1em;
@@ -138,6 +142,10 @@
         }
     }
   }
+  .comments .v{
+    display: none
+    }
+ 
 
 // 设置图片背景
 //   body {
