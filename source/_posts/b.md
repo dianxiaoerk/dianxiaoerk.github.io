@@ -63,7 +63,7 @@ sssssssssssssssssssssssssssssss
              // 音频加载失败
             });
             }
-            musicTimer = setInterval(updateTime, 200);
+            musicTimer = setInterval(updateTime, 1000);
         }
     //4、获取音乐时长
      music.ondurationchange = function () {
@@ -92,7 +92,7 @@ sssssssssssssssssssssssssssssss
          return;
      } else {
           //获取歌曲正在播放的时间
-         playTime = parseInt(music.currentTime);
+         playTime = Math.floor(music.currentTime * 100) / 100;
           //如果当前时长小于等于总时长添加进去
          $('.startTime').text(count(playTime));
             musicProgress();
@@ -101,8 +101,11 @@ sssssssssssssssssssssssssssssss
     }
     //7、设置音乐进度条
     function musicProgress(){ //----------------
-        $('.music-control-playing').css('width',playTime / totalTime * 460)
+        $('.music-control-playing').css('width', playTime / totalTime * 460)
         console.log(playTime / totalTime * 460)
+        console.log('当前时长：'+ playTime)
+        console.log('总时长：'+ totalTime)
+        console.log('playTime / totalTime * 460:'+ playTime / totalTime * 460)
     }
     //、播放音乐
     function player(){
