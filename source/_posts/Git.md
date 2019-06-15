@@ -1,7 +1,9 @@
 ---
 title: Git
-copyright: true
+copyright: false
 date: 2019-06-14 11:49:05
+categories:
+  - 前端工具
 tags:
   - 项目管理工具
 ---

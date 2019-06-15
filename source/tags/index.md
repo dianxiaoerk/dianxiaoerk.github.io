@@ -1,4 +1,6 @@
 ---
 title: 标签
 date: 2019-06-02 13:03:33
+comments: false
+type: tags
 ---

@@ -2,6 +2,8 @@
 title: Yarn
 copyright: true
 date: 2019-06-14 09:55:07
+categories:
+  - 前端工具
 tags:
   - 包管理工具
 ---

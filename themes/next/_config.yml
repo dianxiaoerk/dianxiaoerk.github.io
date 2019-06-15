@@ -94,9 +94,9 @@ menu: #菜单显示
   home: / || home #首页
   tags: /tags/ || tags #标签
   categories: /categories/ || th #分类
-  movies: /movies || film #电影
-  musics: /musics || music #音乐
-  essayists: /essayists || book #随笔
+  #movies: /movies || film #电影
+  #musics: /musics || music #音乐
+  #essayists: /essayists || book #随笔
   archives: /archives/ || archive #归档
   about: /about/ || user #关于
   #schedule: /schedule/ || calendar #时间表
@@ -295,7 +295,7 @@ font:
   enable: true
 
   #外链字体库地址，例如 //fonts.googleapis.com (默认值) Uri of fonts host. E.g. //fonts.googleapis.com (Default).
-  host:
+  host: https://fonts.cat.net
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -306,7 +306,7 @@ font:
   global:
     external: true
     family: Microsoft Yahei
-    size:
+    size: 16
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6).
   # 标题字体 (h1, h2, h3, h4, h5, h6) Fallback to `global` font settings.
