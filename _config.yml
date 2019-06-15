@@ -87,4 +87,3 @@ search:
 deploy:
   type: git #部署的方式
   repo: git@github.com:dianxiaoerk/dianxiaoerk.github.io.git #部署的地址
-
