@@ -93,3 +93,8 @@ yarn
 {% codeblock  %}
 yarn install
 {% endcodeblock %}
+
+<left><font color='#007ACC' size='3'>查看全局模块安装的位置</font></left>
+{% codeblock  %}
+yarn global dir
+{% endcodeblock %}

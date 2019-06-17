@@ -139,7 +139,7 @@ git branch <new-branch>
 
 <left><font color='#00BFFF' size='3'>删除本地分支</font></left>
 {% codeblock  %}
-git branch -d <branch>
+git branch -D <branch>
 {% endcodeblock %}
 
 <left><font color='#00BFFF' size='3'>列出所有本地标签</font></left>
@@ -214,4 +214,17 @@ git push <remote> :<branch/tag-name>>
 <left><font color='#00BFFF' size='3'>上传所有标签</font></left>
 {% codeblock  %}
 git push --tags
+{% endcodeblock %}
+
+#### 8.本地仓库与远程交互操作
+
+<left><font color='#00BFFF' size='3'>远程仓库文件强制覆盖到本地</font></left>
+{% codeblock 逐条执行 %}
+git fetch --all
+git reset --hard origin/分支名称
+git pull
+{% endcodeblock %}
+
+{% codeblock 单条命令 %}
+git fetch --all && git reset --hard origin/分支名称 && git pull
 {% endcodeblock %}
