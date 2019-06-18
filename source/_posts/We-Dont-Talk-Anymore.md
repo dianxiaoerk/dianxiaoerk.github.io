@@ -3,9 +3,10 @@ title: We Dont Talk Anymore
 copyright: true
 tags:
   - 音乐
+  - 欧美音乐
 categories:
   - - 音乐
-    - 欧美
+    - 欧美音乐
 date: 2019-06-15 16:43:02
 ---
 

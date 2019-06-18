@@ -30,14 +30,14 @@
         }
   /* 导航条样式修改 */
   .site-nav{
-      color: red;
     .menu{
       float: none;
       .menu-item a{
         padding: 0 5px;
         font-size: 18px;
         font-weight: 550;
-        text-shadow: 2px 2px 3px gray
+        text-shadow: 2px 2px 3px gray;
+        transition: 0.5s
         }
      }
     }
@@ -96,8 +96,41 @@
   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
 }
+/* 头部样式 */
+#header{
+  #menu{
+    a:hover{
+      color:#ff6700;
+      background: none;
+      text-shadow: 2px 2px 2px #ccc;
+    }
+  }
+}
 
+#main{
+  #posts{
+    article{
+     .post-body{
+       a{
+           border-bottom: none;
+           font-weight: 550;
+           transition: 0.5s
+       }
+       a:hover{
+         background: none;
+         color: #ff6700
+       
+         }
+       }
+    }
+    }
+  }
 
+blockquote{
+  font-size: 17px;
+}
+
+/* 看板娘位置 */
 #live2d-widget{
   left:0
 }
@@ -110,3 +143,41 @@
     background-size:cover;
   
 }
+
+
+//代码块复制按钮
+  .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: gray;
+      white-space: nowrap;
+      vertical-align: top;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 2px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
