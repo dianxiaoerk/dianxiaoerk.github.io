@@ -24,9 +24,17 @@
 <script>
   var music = document.getElementById('music');
   var Obscuration = document.getElementById('Obscuration');
+   $('body').css({
+      "overflow-y":"hidden"
+    })
   $('#Obscuration').click(function(){
+    
     music.play();
-    $(this).fadeOut(3000)
+    $(this).fadeOut(3000,function(){
+      $('body').css({
+           "overflow": "scroll"
+    })
+    })
   })
 
 </script>
