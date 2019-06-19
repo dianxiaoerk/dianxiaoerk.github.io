@@ -2,8 +2,9 @@
 {% import '_macro/post.swig' as post_template %}
 {% import '_macro/sidebar.swig' as sidebar_template %}
 
-{% block title %}{{ config.title }}{% if theme.index_with_subtitle and config.subtitle %} - {{config.subtitle }}{% endif %}{% endblock %}
-
+{% block title %}
+<link href="http://mydomain.com/my-next-page.htm" rel="prerender"/>
+{{ config.title }}{% if theme.index_with_subtitle and config.subtitle %} - {{config.subtitle }}{% endif %}{% endblock %}
 {% block page_class %}
   {% if is_home() %}page-home{% endif -%}
 {% endblock %}
