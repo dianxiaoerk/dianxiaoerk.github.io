@@ -17,7 +17,18 @@
 
   {% include '_partials/pagination.swig' %}
 {% endblock %}
-
 {% block sidebar %}
+<div id='Obscuration'></div>
+<audio id='music' src='https://music.163.com/song/media/outer/url?id=5255640.mp3'>
+<script src='https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js'></script>
+<script>
+  var music = document.getElementById('music');
+  var Obscuration = document.getElementById('Obscuration');
+  $('#Obscuration').click(function(){
+    music.play();
+    $(this).fadeOut(3000)
+  })
+
+</script>
   {{ sidebar_template.render(false) }}
 {% endblock %}
