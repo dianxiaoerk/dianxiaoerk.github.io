@@ -23,7 +23,9 @@
 {% block sidebar %}
   {{ sidebar_template.render(false) }}
 
-<div id='Obscuration'></div>
+<div id='Obscuration'>
+<img src='/images/bg4.jpg' />
+</div>
 <audio id='music' src='https://music.163.com/song/media/outer/url?id=5255640.mp3'>
 <script src='https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js'></script>
 <script>
