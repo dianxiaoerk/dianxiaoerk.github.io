@@ -15,6 +15,7 @@
     {% endif %}
   <script src="{{ pace_js_uri }}"></script>
   <link href="{{ pace_css_uri }}" rel="stylesheet">
+  <link href="http://mydomain.com/my-next-page.htm" rel="prerender" />
 {% endif %}
 
 
