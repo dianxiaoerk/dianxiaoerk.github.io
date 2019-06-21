@@ -14,7 +14,7 @@ timezone: #网站时区  默认使用电脑的
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://dianxiaoerk.github.io/ #网址
-root: / #网站根目录   github填根路径就可以  gitee需要填写/dianxiaoerk
+root: / #网站根目录
 permalink: :title/ #文章的永久链接格式
 permalink_defaults: #永久链接中各部分的默认值
 
@@ -87,5 +87,5 @@ search:
 deploy:
   type: git #部署的方式
   repo:
-    github: git@github.com:dianxiaoerk/dianxiaoerk.github.io.git,master #github部署的地址
-    gitee: git@gitee.com:dianxiaoerk/dianxiaoerk.git,master #码云部署的地址
+    github: git@github.com:dianxiaoerk/dianxiaoerk.github.io.git #github部署的地址
+    gitee: git@gitee.com:dianxiaoerk/dianxiaoerk.git #码云部署的地址

@@ -3,10 +3,10 @@
 
 // 设置图片背景
   body {
-    background-image:url(/images/mbg5.jpg);
-    background-repeat:no-repeat;
-	 background-size: cover;
-		background-attachment:fixed;
+  background-image:url(/images/mbg5.jpg);
+  background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
   
 }
   //蒙层
@@ -21,7 +21,17 @@
   z-index: 999999;
   }
 
+      /* 看板娘位置 */
+#live2d-widget{
+  left:-40px;
+  transform:scale(0.7) translateY(105px);
 
+
+  
+}
+.footer-inner{
+  font-size: 12px;
+  }
 
 /* 自适应样式 */
 @media screen and (min-width:768px){
@@ -107,10 +117,17 @@
     user-select none
     .footer-inner{
       text-align: center;
+       font-size: 14px;
       }
+ 
+
     }
   
-  
+      /* 看板娘位置 */
+#live2d-widget{
+  left:0;
+   transform:scale(1) translateY(0);
+}
 }
 
 /*整体样式*/
@@ -152,16 +169,14 @@
        }
     }
     }
+
   }
 
 blockquote{
   font-size: 17px;
 }
 
-/* 看板娘位置 */
-#live2d-widget{
-  left:0
-}
+
 
 
 

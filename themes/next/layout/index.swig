@@ -28,7 +28,6 @@
 <script>
   var music = document.getElementById('music');
   var Obscuration = document.getElementById('Obscuration');
-  
   $('#Obscuration').click(function(){
     music.play();
     $(this).fadeOut(3000)
