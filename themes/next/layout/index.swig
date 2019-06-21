@@ -29,9 +29,7 @@
 <script>
   var music = document.getElementById('music');
   var Obscuration = document.getElementById('Obscuration');
-    $(document.body).css({
-            "overflow-y": "hidden"
-        });
+  
   $('#Obscuration').click(function(){
     music.play();
     $(this).fadeOut(3000)
