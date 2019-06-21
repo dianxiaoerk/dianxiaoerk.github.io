@@ -1,9 +1,37 @@
 // Custom styles.
 /* 设置根目录的font-size  用来做移动端布局适配 */
 
+// 设置图片背景
+  body {
+    background-image:url(/images/mbg5.jpg);
+    background-repeat:no-repeat;
+	 background-size: cover;
+		background-attachment:fixed;
+  
+}
+  //蒙层
+#Obscuration{
+  position:fixed;
+  top:0;
+  left:0;
+  right: 0;
+  bottom:0;
+  background-image:url(/images/mbg4.jpg);
+  background-size: cover;
+  z-index: 999999;
+  }
+
+
 
 /* 自适应样式 */
 @media screen and (min-width:768px){
+  /* 背景图片 */
+  body{
+     background-image:url(/images/bg5.jpg);
+  }
+  #Obscuration{
+     background-image:url(/images/b4.jpg);
+    }
     /* 头部样式修改 */
     .header{
       background: rgba(255,255,255,.5)
@@ -134,15 +162,7 @@ blockquote{
 #live2d-widget{
   left:0
 }
-// 设置图片背景
-  body {
-    background:url(/images/bg5.jpg);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-size: 100%;
-    background-size:cover;
-  
-}
+
 
 
 //代码块复制按钮
@@ -183,17 +203,6 @@ blockquote{
     }
 
 
-//蒙层
-#Obscuration{
-  position:fixed;
-  top:0;
-  left:0;
-  right: 0;
-  bottom:0;
-  background:url(/images/b4.jpg);
-  background-size: cover;
-  z-index: 999999;
-  }
 
 //滚动条 去除
  body::-webkit-scrollbar {
@@ -212,4 +221,9 @@ blockquote{
   box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   background   : #ededed;
+  }
+
+
+.pagination .page-number.current{
+  border-radius: 50%
   }

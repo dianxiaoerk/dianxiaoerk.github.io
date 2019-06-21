@@ -23,15 +23,10 @@
   {% endif %}
 </div>
 <div>
-<span class="post-meta-item-icon">
-    <i class="fa fa-music"></i>
-    </span>
+<span class="post-meta-item-icon"><i class="fa fa-music"></i></span>
     几人份的畅谈 道三两句晚安 惹多情的遐想 却轻易地走散
-    <span class="post-meta-item-icon">
-    <i class="fa fa-bar-chart-o"></i>
-    </span>
+<span class="post-meta-item-icon"><i class="fa fa-bar-chart-o"></i></span>
     </div>
-
 {% if theme.footer.powered %}
   <div class="powered-by">{#
   #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') }}{#

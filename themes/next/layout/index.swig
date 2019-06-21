@@ -21,8 +21,7 @@
 {% endblock %}
 {% block sidebar %}
   {{ sidebar_template.render(false) }}
-
-<div id='Obscuration'>
+      <div id='Obscuration'>
 </div>
 <audio id='music' src='https://music.163.com/song/media/outer/url?id=5255640.mp3'>
 <script src='https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js'></script>
@@ -35,5 +34,4 @@
     $(this).fadeOut(3000)
   })
 </script>
-
 {% endblock %}
