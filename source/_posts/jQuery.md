@@ -245,7 +245,7 @@ text()和 html()区别
 {% endblockquote %}
 
 {% codeblock  %}
-console.log(\$('.box').attr('class')); <!-- box -->
+console.log($('.box').attr('class')); <!-- box -->
 
 <!-- 相当于 -->
 
@@ -253,15 +253,15 @@ console.log(a.getAttribute('class'));
 
 <!-- 设置属性 -->
 
-\$('.box').attr('id', 'zz') <!-- 相当于 a.setAttribute('id', 'zz') -->
+$('.box').attr('id', 'zz') <!-- 相当于 a.setAttribute('id', 'zz') -->
 
 <!-- 删除属性 -->
 
-\$('.box').removeAttr('id')<!-- 相当于 a.removeAttribute('id'); -->
+$('.box').removeAttr('id')<!-- 相当于 a.removeAttribute('id'); -->
 
 <!-- 传入的参数可以是一个对象 -->
 
-\$('.box').attr({
+$('.box').attr({
 id: 'he',
 df: 'dd'
 })
@@ -273,7 +273,7 @@ df: 'dd'
 {% endblockquote %}
 
 {% codeblock %}
-console.log(\$('.box').prop('class')); <!-- box -->
+console.log($('.box').prop('class')); <!-- box -->
 
 <!-- 相当于 -->
 
@@ -281,13 +281,13 @@ console.log(a.className);
 
 <!-- 设置属性 -->
 
-\$('.box').prop('id', 'kk') <!-- 相当于 a.id = 'kk' -->
+$('.box').prop('id', 'kk') <!-- 相当于 a.id = 'kk' -->
 
 <!-- 删除属性  prop只能删除自己添加的非固有属性   删除固有属性删除不掉 -->
 
 $('.box').prop('df', 'dd')
 $('.box').removeProp('df');
-console.log(\$('.box').prop('df'));
+console.log($('.box').prop('df'));
 {% endcodeblock %}
 
 <left><font color='#007ACC' size='3'>全选 demo</font></left>
@@ -437,7 +437,7 @@ $('.box').click(function () {
 
 <!-- 获取多个 -->
 
-console.log(\$('.box').css(['width', 'height']));<!-- {width: "500px", height: "500px"} -->
+console.log($('.box').css(['width', 'height']));<!-- {width: "500px", height: "500px"} -->
 {% endcodeblock %}
 
 <center><font color='#3333' size='3'>css属性设置  css(string,value) | css({})</font></center>
@@ -450,7 +450,7 @@ $('.box').css('width', 100)
 
 <!-- 设置多个属性 -->
 
-\$('.box').css({
+$('.box').css({
 width: 100,
 height: 100,
 border: '1px solid blue'
@@ -564,7 +564,7 @@ $('.one').offset({<!-- 设置是相对于文档而言 -->
         top: 100
     })
     console.log($('.one').offset()); <!-- {top: 100, left: 100}  -->
-console.log(\$('.one').position()); <!-- {top: 79, left: 71}  100-body默认margin-left 8像素-最近父级的border-最近父级的margin -->
+console.log($('.one').position()); <!-- {top: 79, left: 71}  100-body默认margin-left 8像素-最近父级的border-最近父级的margin -->
 {% endcodeblock %}
 
 <center><font color='#3333' size='3'>scrollLeft()/scrollTop()</font></center>
@@ -648,21 +648,21 @@ $('li').last()
 
 <left><font color='#007ACC' size='3'>odd 索引值为基数的筛选</font></left>
 {% codeblock  %}
-console.log(\$('li:odd').text()); <!-- 2468 -->
+console.log($('li:odd').text()); <!-- 2468 -->
 {% endcodeblock %}
 
 <left><font color='#007ACC' size='3'>even 索引值为偶数的筛选出来</font></left>
 {% codeblock  %}
-console.log(\$('li:even').text()); <!-- 1357 -->
+console.log($('li:even').text()); <!-- 1357 -->
 {% endcodeblock %}
 
 <left><font color='red' size='3'>eq()具体选择的索引值</font></left>
 {% codeblock  %}
-console.log(\$('li:eq(3)').text()); <!-- 4 -->
+console.log($('li:eq(3)').text()); <!-- 4 -->
 
 <!-- 可以写在外面 -->
 
-\$('li').eq('1') <!-- 可传字符串    整数  负数 -->
+$('li').eq('1') <!-- 可传字符串    整数  负数 -->
 {% endcodeblock %}
 
 <center><font color='#3333' size='3'>prev / prev /All / next / nextAll / sibllings</font></center>
@@ -675,16 +675,16 @@ console.log($('li:eq(4)').prev('p').text()); <!--  ' '   找寻索引为4的上�
 
 <left><font color='orange' size='3'>prevAll 找寻选中元素的上面的所有兄弟元素 nextAll 相反</font></left>
 {% codeblock  %}
-console.log(\$('li:eq(4)').prevAll('p').text()); <!-- 4321  找寻索引为4的上面所有兄弟元素是否包含p标签 -->
+console.log($('li:eq(4)').prevAll('p').text()); <!-- 4321  找寻索引为4的上面所有兄弟元素是否包含p标签 -->
 
 <!-- 如果不设置基准条件   会默认把最后一个做基准条件    next相反  他会把第一个做基准条件 -->
 
-console.log(\$('li').prevAll().text()); <!-- 7654321 -->
+console.log($('li').prevAll().text()); <!-- 7654321 -->
 {% endcodeblock %}
 
 <left><font color='orange' size='3'>sibllings 元素的所有兄弟元素</font></left>
 {% codeblock  %}
-console.log(\$('li:eq(4)').siblings().text()); <!-- 1234678 -->
+console.log($('li:eq(4)').siblings().text()); <!-- 1234678 -->
 {% endcodeblock %}
 
 <center><font color='#3333' size='3'>filter / not / is / slice / map / hs / each</font></center>
@@ -705,12 +705,12 @@ console.log($('li').not(':eq(3)').text());
 
 <left><font color='#007ACC' size='3'>is() 判断是否包含指定的值 结果返回 boolean</font></left>
 {% codeblock  %}
-console.log(\$('li').is(':eq(10)'));<!-- false -->
+console.log($('li').is(':eq(10)'));<!-- false -->
 {% endcodeblock %}
 
 <left><font color='red' size='3'>slice()截取筛选</font></left>
 {% codeblock  %}
-console.log(\$('li').slice(0, 4).text()); <!-- 1234   取头不取尾 -->
+console.log($('li').slice(0, 4).text()); <!-- 1234   取头不取尾 -->
 {% endcodeblock %}
 
 ##### 遍历
@@ -759,7 +759,7 @@ console.log($('li').map(function (index, ele) { <!-- index 索引值   ele标签
 
 <left><font color='red' size='3'>has() 找寻符合指定条件的元素</font></left>
 {% codeblock  %}
-console.log(\$('li').has('p').text()); <!-- 222     1111 -->
+console.log($('li').has('p').text()); <!-- 222     1111 -->
 {% endcodeblock %}
 
 <center><font color='#3333' size='3'>children / find / end / add / andBack</font></center>
@@ -776,27 +776,27 @@ console.log(\$('li').has('p').text()); <!-- 222     1111 -->
 
 <left><font color='red' size='3'>find(child)查找当前元素包含的子元素</font></left>
 {% codeblock  %}
-console.log(\$('div').find('.age'));
+console.log($('div').find('.age'));
 
 <!-- 注意  链式操作  查询完以后jq会把查询元素的元素给储存下来  可以通过prevObject返回开始查询元素的元素 -->
 
-console.log(\$('div').find('.age').prevObject.find('.name'));
+console.log($('div').find('.age').prevObject.find('.name'));
 {% endcodeblock %}
 {% asset_img 6.png %}
 <left><font color='red' size='3'>children(selector) 找寻当前元素下的后代元素</font></left>
 {% codeblock  %}
-console.log(\$('li').children());
+console.log($('li').children());
 {% endcodeblock %}
 
 {% asset_img 7.png %}
 
 <left><font color='red' size='3'>end() 返回查询元素的元素 回退</font></left>
 {% codeblock  %}
-console.log(\$('div').find('.age').prevObject.find('.name'));
+console.log($('div').find('.age').prevObject.find('.name'));
 
 <!-- 其中prevObject可以用end()替换 -->
 
-console.log(\$('div').find('.age').end().find('.name'));
+console.log($('div').find('.age').end().find('.name'));
 {% endcodeblock %}
 
 <left><font color='red' size='3'>add(selector | element | jquery object | html) 添加</font></left>
@@ -806,7 +806,7 @@ $('span:last').css('color', 'red')
 
 <!-- 可以写成 -->
 
-\$('span:first').add('span:last').css('color', 'red')
+$('span:first').add('span:last').css('color', 'red')
 {% endcodeblock %}
 
 <center><font color='#3333' size='3'>offsetParent / parent / parents / closest</font></center>
@@ -836,32 +836,32 @@ console.log($('span').parent());
 {% asset_img 8.png %}
 
 {% codeblock  %}
-console.log(\$('span').parent('div'));
+console.log($('span').parent('div'));
 {% endcodeblock %}
 
 {% asset_img 9.png %}
 
 <left><font color='#007ACC' size='3'>parents(selector)寻找当前元素的所有祖先元素</font></left>
 {% codeblock  %}
-console.log(\$('span').parents());
+console.log($('span').parents());
 {% endcodeblock %}
 
 {% asset_img 10.png %}
 
 {% codeblock  %}
-console.log(\$('span').parents('p'));<!-- 传入条件代表找寻指定的父级元素 -->
+console.log($('span').parents('p'));<!-- 传入条件代表找寻指定的父级元素 -->
 {% endcodeblock %}
 
 {% asset_img 11.png %}
 <left><font color='#007ACC' size='3'>closest(selector | jQuery Object | element) 寻找离当前元素最近的 selector 元素 向外找 包括自身</font></left>
 {% codeblock  %}
-console.log(\$('p').closest('li'));
+console.log($('p').closest('li'));
 {% endcodeblock %}
 
 {% asset_img 12.png %}
 <left><font color='#007ACC' size='3'>offsetParent() 找寻离当前元素最近的有定位的父级</font></left>
 {% codeblock  %}
-console.log(\$('p').offsetParent());<!-- 父级都没有定位找到了html -->
+console.log($('p').offsetParent());<!-- 父级都没有定位找到了html -->
 {% endcodeblock %}
 
 {% asset_img 13.png %}
@@ -901,14 +901,14 @@ $('li').before($(document.getElementsByTagName('h2')));
 
 <!-- 还可以传入函数 -->
 
-\$('p').before(function (index, value) { <!-- index代表索引  value代表标签内容 -->
+$('p').before(function (index, value) { <!-- index代表索引  value代表标签内容 -->
 console.log(index); <!-- 0 1 -->
 console.log(value); <!-- 1 o2 -->
 });
 
 <!-- 还可以添加新的dom元素 -->
 
-\$('p').before('<span>3333</span>');
+$('p').before('<span>3333</span>');
 {% endcodeblock %}
 
 <left><font color='red' size='3'>insertBefore() 把一个元素插入一个元素前面 insertAfter()相反 谁在前面结果执行完返回谁 兄弟元素</font></left>
@@ -958,7 +958,7 @@ $('.c').replaceWith($('.d'))
 
 <left><font color='red' size='3'>detach() 删除当前元素 返回删除的对象及事件</font></left>
 {% codeblock  %}
-\$('.a').detach()
+$('.a').detach()
 {% endcodeblock %}
 
 <center><font color='#3333' size='3'>克隆操作</font></center>
@@ -982,17 +982,17 @@ $('.a').wrap('<div></div>')
 <left><font color='#007ACC' size='3'>wrapAll()把当前元素类型整合在一起在外面集体包裹一层元素 会破坏原本的 dom 结构</font></left>
 
 {% codeblock  %}
-\$('li').wrapAll('<div>')
+$('li').wrapAll('<div>')
 {% endcodeblock %}
 
 <left><font color='#007ACC' size='3'>wrapInner()在当前元素里面包裹一层元素</font></left>
 {% codeblock  %}
-\$('.a').wrapInner('<div>')
+$('.a').wrapInner('<div>')
 {% endcodeblock %}
 
 <left><font color='#007ACC' size='3'>unwrap()解除包裹 不能传入参数</font></left>
 {% codeblock  %}
-\$('li').unwrap()
+$('li').unwrap()
 {% endcodeblock %}
 
 ## 六、api 动画
@@ -1183,7 +1183,7 @@ top: 500
 }, 3000, 'easeInOutBounce', function () {
 console.log('执行结束 1');
 })
-\$(this).animate({
+$(this).animate({
 left: 200,
 top: 300
 }, 3000, 'easeOutBounce', function () {
@@ -1199,7 +1199,7 @@ left: 500,
 top: 500
 }, 3000, 'easeInOutBounce', function () {
 console.log('执行结束 1');
-\$(this).animate({
+$(this).animate({
 left: 200,
 top: 300
 }, 3000, 'easeOutBounce', function () {
@@ -1261,13 +1261,13 @@ $('li').on('click', function () {
 <!-- 点击 btn 按钮新增 li 元素 -->
 
 $('.btn').click(function () {
-        $('ul').append('<li>' + parseInt(\$('li').length + 1) + '</li>')
+        $('ul').append('<li>' + parseInt($('li').length + 1) + '</li>')
 })
 
 <!-- 添加多个事件中间用空格隔开 -->
 
 $('li').on('click mousemove', function () {
-console.log(\$(this).text());
+console.log($(this).text());
 })
 {% endcodeblock %}
 
@@ -1282,13 +1282,13 @@ $('ul').on('click', 'li', function () { <!-- 第一个参数是事件类型，�
         console.log($(this).text());
 })
 $('.btn').click(function () {
-        $('ul').append('<li>' + parseInt(\$('li').length + 1) + '</li>')
+        $('ul').append('<li>' + parseInt($('li').length + 1) + '</li>')
 })
 
 <!-- on里面还可以添加参数 -->
 
 $('ul').on('click', 'li', {name: 'kk'}, function (e) { <!-- 里面传入的对象是存在event对象中的data下面 -->
-console.log(\$(this).text());
+console.log($(this).text());
 console.log(e.data); <!-- {name: "kk"} -->
 })
 {% endcodeblock %}
@@ -1313,14 +1313,14 @@ console.log(2);
 
 <!-- 如果你只想取消其中一个 下面写法是错误的 里面传入的是一个新的函数 你必须要传入一个索引才能找到对应的 -->
 
-\$('.btn').off('click', function () {
+$('.btn').off('click', function () {
 console.log(1);
 })
 
 <!-- 改写绑定方法的方式 -->
 
 $('.btn').on('click', add);
-\$('.btn').click(text);
+$('.btn').click(text);
 
     function add() {
         console.log(1);
@@ -1424,7 +1424,7 @@ xxx
 ## 九、常用工具方法
 
 {% blockquote %}
-\$.type()
+$.type()
 $.trim()
 $.makeArray()/$.inArray()/$.each()
 $.noConflict()
@@ -1450,7 +1450,7 @@ $('div').text();
     $('div').animate();
 $('div').click();
     $('div').css();
-\$('div')转化为 jquery 对象 是实例  
+$('div')转化为 jquery 对象 是实例  
 后面的方法都是操作实例的
 {% endcodeblock %}
 
@@ -1471,7 +1471,7 @@ function dd() {
 
 {% endcodeblock %}
 
-<left><font color='#007ACC' size='3'>\$.type()是定义在 jQuery 函数上的方法</font></left>
+<left><font color='#007ACC' size='3'>$.type()是定义在 jQuery 函数上的方法</font></left>
 {% codeblock  %}
 function jQuery(){
 
@@ -1544,7 +1544,7 @@ var a = ' sdfsdfsdf sddfsdf ';
 </script>
 {% endcodeblock %}
 
-<left><font color='#007ACC' size='3'>\$.inArray(元素，数组，查找起始位置(不传默认 0)) 检测当前数组是否包含指定元素 存在返回元素的索引 不存在返回-1</font></left>
+<left><font color='#007ACC' size='3'>$.inArray(元素，数组，查找起始位置(不传默认 0)) 检测当前数组是否包含指定元素 存在返回元素的索引 不存在返回-1</font></left>
 {% codeblock  %}
 var arr = ['1', '2', '3'];
 var a = $.inArray('3', arr);
@@ -1553,7 +1553,7 @@ var a = $.inArray('3', arr);
 console.log(b); <!-- -1 -->
 {% endcodeblock %}
 
-<left><font color='#007ACC' size='3'>\$.each(数据，回调函数)循环遍历 一般用于处理数据</font></left>
+<left><font color='#007ACC' size='3'>$.each(数据，回调函数)循环遍历 一般用于处理数据</font></left>
 {% codeblock  Demo%}
 
 <!-- 比如我想把data的数据插入到box当中 -->
@@ -1621,7 +1621,7 @@ console.log(b); <!-- -1 -->
 {% asset_img 18.png%}
 
 {% blockquote %}
-这里再说一下实例方法\$(dom).each()
+这里再说一下实例方法$(dom).each()
 {% endblockquote %}
 
 {% codeblock  %}
@@ -1645,7 +1645,7 @@ console.log(b); <!-- -1 -->
 
 {% asset_img 19.png%}
 
-<left><font color='#007ACC' size='3'>\$.merge(第一个数组，第二个数组) 合并数组或者类数组 默认把第二个数组合并到第一个数组中 会改变第一个数组</font></left>
+<left><font color='#007ACC' size='3'>$.merge(第一个数组，第二个数组) 合并数组或者类数组 默认把第二个数组合并到第一个数组中 会改变第一个数组</font></left>
 {% codeblock  %}
 
    <!-- 合并数组 -->
@@ -1697,7 +1697,7 @@ console.log(b); <!-- -1 -->
 
 {% endcodeblock %}
 
-#### \$.noConflict()
+#### $.noConflict()
 
 <left><font color='#007ACC' size='3'>防止冲突 $符号不止jQuery使用  也有很多类库使用  这样我们在引入过个库的时候如果有$符号冲突了 可以使用这个方法是 jQuery 交出$符号的权限  意味着$不再对 jQuery 起作用</font></left>
 {% codeblock  %}
@@ -1730,7 +1730,7 @@ console.log(b); <!-- -1 -->
 {% asset_img 21.png%}
 
 {% blockquote %}
-注意 \$.noConflict() 接收一个参数 boolean 值 true false 默认 false
+注意 $.noConflict() 接收一个参数 boolean 值 true false 默认 false
 true 代表连 jQuery 操作符号的权限也提交出去
 {% endblockquote %}
 
@@ -1762,7 +1762,7 @@ true 代表连 jQuery 操作符号的权限也提交出去
 {% asset_img 23.png%}
 
 {% blockquote %}
-注意 jQuery 在更新迭代的时候会剔除掉一些老的兼容性方法 比如 最新的 jQuery3.3.1 的就把兼容 IE6 的很多方法给剔除了 如果项目要求必须兼容 IE6 那我们可以使用 jQuery1.2 左右的版本 但是这些版本没有 jQuery 新版本的一些新方法 如果我们想要两者兼顾的话 需要引入两个 jQuery 当我们引入两个 jQuery 就会产生冲突 这时候我们就可以使用\$.noConflict() 进行移交
+注意 jQuery 在更新迭代的时候会剔除掉一些老的兼容性方法 比如 最新的 jQuery3.3.1 的就把兼容 IE6 的很多方法给剔除了 如果项目要求必须兼容 IE6 那我们可以使用 jQuery1.2 左右的版本 但是这些版本没有 jQuery 新版本的一些新方法 如果我们想要两者兼顾的话 需要引入两个 jQuery 当我们引入两个 jQuery 就会产生冲突 这时候我们就可以使用$.noConflict() 进行移交
 步骤
 {% endblockquote %}
 
@@ -1783,7 +1783,7 @@ true 代表连 jQuery 操作符号的权限也提交出去
 
 {% endcodeblock %}
 
-#### \$.data()
+#### $.data()
 
 <left><font color='#007ACC' size='3'>用来获取 dom 元素存储的数据</font></left>
 {% codeblock  %}
@@ -1832,7 +1832,7 @@ $.extend()/$.fn.extend()
 jQuery 在实现一些方法的时候都是上面的方法帮助其实现的 如果我们要实现自己的 jQuery 插件就要使用上面的方法
 {% endblockquote %}
 
-#### \$.extend()
+#### $.extend()
 
 <left><font color='#007ACC' size='3'>作用一 用来合并对象 谁在前面 合并到谁身上 改变原对象 第一个参数是 boolean 值 不传默认是 false 代表浅拷贝 新的对象只是复制了合并对象数据的引用地址 传入 true 代表深拷贝 表示拿到合并对象的真实数据 而不再是地址</font></left>
 
@@ -1857,7 +1857,7 @@ name: 'dddd',
 age: 6666
 }
 }
-console.log(\$.extend(obj1, obj2)); //{a: {…}, b: {…}, c: {…}, d: {…}}
+console.log($.extend(obj1, obj2)); //{a: {…}, b: {…}, c: {…}, d: {…}}
 console.log(obj1); //{a: {…}, b: {…}, c: {…}, d: {…}}
 console.log(obj2); //{c: {…}, d: {…}}
 
@@ -1966,10 +1966,10 @@ $.extend({
     })
     var arr = [1, 2, 3, 4, 5, 6, 85, 0, 546984, 8489, 65446984, 35146];
     console.log($.max(arr));<!-- 65446984 -->
-console.log(\$.min(arr));<!-- 0 -->
+console.log($.min(arr));<!-- 0 -->
 {% endcodeblock %}
 
-#### \$.fn.extend()
+#### $.fn.extend()
 
 {% codeblock  %}
 $.fn.extend 相当于 $.prototype.extend <!-- prototype原型 -->
@@ -1979,7 +1979,7 @@ console.log($.fn.extend = $.prototype.extend);<!-- true -->
 <left><font color='#007ACC' size='3'>作用一 合并对象</font></left>
 {% codeblock  %}
 
-<!-- 和\$.extend()一样 -->
+<!-- 和$.extend()一样 -->
 
 {% endcodeblock %}
 
@@ -2023,7 +2023,7 @@ return this;
 $.fn.extend(obj1);
     <!-- 测试  实例方法使用 -->
     $('div').mouseenter(function () {
-\$(this).dd();
+$(this).dd();
 })
 </script>
 {% endcodeblock %}
@@ -2031,14 +2031,14 @@ $.fn.extend(obj1);
 ## 十一、高级方法 Callbacks/deferred/ajax
 
 {% blockquote %}
-\$.Callbacks()
-\$.Deferred()
-\$.ajax()
+$.Callbacks()
+$.Deferred()
+$.ajax()
 {% endblockquote %}
 
-#### \$.Callbacks()
+#### $.Callbacks()
 
-<left><font color='#007ACC' size='3'>作用一 \$.Callbacks()用来处理多个回调 方便管理回调函数用的 </font></left>
+<left><font color='#007ACC' size='3'>作用一 $.Callbacks()用来处理多个回调 方便管理回调函数用的 </font></left>
 
 {% codeblock  %}
 
@@ -2061,7 +2061,7 @@ $.fn.extend(obj1);
 
 <!-- 创建一个回调队列对象 -->
 
-var game = \$.Callbacks();
+var game = $.Callbacks();
 
 <!-- 给回调对象添加方法 -->
 
@@ -2099,9 +2099,9 @@ console.log('正在登陆');
 
 {% endcodeblock %}
 {% asset_img 25.png%}
-<left><font color='#007ACC' size='3'> 通过\$.Callbacks 我们可以在任何作用域下访问</font></left>
+<left><font color='#007ACC' size='3'> 通过$.Callbacks 我们可以在任何作用域下访问</font></left>
 {% codeblock  %}
-var game = \$.Callbacks();
+var game = $.Callbacks();
 
     function mm() {
         function login() {
@@ -2131,14 +2131,14 @@ var game = \$.Callbacks();
 <!-- 比如上面的例子 -->
 <!-- 只要你关注了game     game通过fire()发布  你就能够得到信息 -->
 
-\$('.box').click(function () { <!-- box点击的时候  game就会触发  你也可以写多个例子  只要你的方法中包含game.fire()你就能触发它的方法   game只有一个    执行它的人可以有多个 -->
+$('.box').click(function () { <!-- box点击的时候  game就会触发  你也可以写多个例子  只要你的方法中包含game.fire()你就能触发它的方法   game只有一个    执行它的人可以有多个 -->
 game.fire()
 })
 {% endcodeblock %}
 
 {% asset_img 27.png%}
 
-<left><font color='#007ACC' size='3'>\$.Callbacks 实现观察者模式解析</font></left>
+<left><font color='#007ACC' size='3'>$.Callbacks 实现观察者模式解析</font></left>
 {% codeblock  %}
 
  <!-- 首先  它得有一个add   用来添加执行回调的方法  它存的方法是一个数组的集合  通过forEach循环进行执行 -->
@@ -2164,12 +2164,12 @@ console.log('2222');
 cb.fire()
 {% endcodeblock %}
 {% blockquote %}
-\$.Callbacks()接收四个固定参数 是字符串形式的
+$.Callbacks()接收四个固定参数 是字符串形式的
 {% endblockquote %}
 
 <left><font color='#007ACC' size='3'>once 代表只能触发一次 也就是 fire 一次</font></left>
 {% codeblock  %}
-var cb = \$.Callbacks()
+var cb = $.Callbacks()
 
     function a() {
         console.log('1111');
@@ -2185,7 +2185,7 @@ var cb = \$.Callbacks()
 
 <!-- 我们填个once   -->
 
-var cb = \$.Callbacks('once')
+var cb = $.Callbacks('once')
 cb.add(a);
 cb.fire(); <!-- 1111    发现只有第一个被触发了   后面的都没有被触发 -->
 cb.fire();
@@ -2198,7 +2198,7 @@ cb.fire()
 <left><font color='#007ACC' size='3'>memory 表示只要你前面触发过一次（执行过一次 fire()了） 后面再添加方法会自动触发 </font></left>
 
 {% codeblock  %}
-var cb = \$.Callbacks('memory')
+var cb = $.Callbacks('memory')
 cb.add(a);
 cb.fire(); <!-- 1111 -->
 cb.add(b) <!-- 222 -->
@@ -2209,7 +2209,7 @@ cb.add(b) <!-- 222 -->
 
 <left><font color='#007ACC' size='3'>unique 相同的方法只能存在一次</font></left>
 {% codeblock  %}
-var cb = \$.Callbacks()
+var cb = $.Callbacks()
 cb.add(a);
 cb.add(a);
 cb.add(a);
@@ -2217,7 +2217,7 @@ cb.fire(); <!-- 触发了三次 1111 -->
 
 <!-- 当我们传入unnique -->
 
-var cb = \$.Callbacks('unique')
+var cb = $.Callbacks('unique')
 cb.add(a);
 cb.add(a);
 cb.add(a);
@@ -2278,7 +2278,7 @@ return false;
 
 {% endcodeblock %}
 
-#### \$.Deferred()
+#### $.Deferred()
 
 {% blockquote %}
 请求数据的异步操作 发送请求的同时 用户还能执行其他的操作
@@ -2289,7 +2289,7 @@ return false;
 
 <!-- 创建一个延迟对象 -->
 
-var dt = \$.Deferred();
+var dt = $.Deferred();
 
 <!-- 创建出来的延迟对象是没有状态的 一般请求数据会有三个状态 请求成功 resolve 请求失败 reject 请求过程 -->中 notify
 <!-- 我们要手动改变 同一个请求拿到数据就变成 resolve 没有拿到数据 reject 正在请求数据 notify -->
@@ -2318,11 +2318,11 @@ dt.notify(); <!-- 正在请求 -->
 <!-- 模拟请求数据 -->
 <!-- 创建一个延迟对象 -->
 
-var dt = \$.Deferred();
+var dt = $.Deferred();
 var timer = function () {
 setTimeout(function () {
 console.log('状态');
-var num = parseInt(Math.random() \* 3);
+var num = parseInt(Math.random() * 3);
 switch (num) {
 case 0:
 dt.resolve();
@@ -2368,7 +2368,7 @@ console.log(2);
 
 {% endcodeblock %}
 
-#### \$.ajax()
+#### $.ajax()
 
 <center><font color='#3333' size='3'>xxx</font></center>
 <left><font color='#007ACC' size='3'>xx</font></left>
@@ -2428,7 +2428,7 @@ scroll()
 <left><font color='#007ACC' size='3'>监听鼠标左键 1 滚轮 2 右键按下 3</font></left>
 
 {% codeblock  %}
-\$(document).mousedown(function (e) {
+$(document).mousedown(function (e) {
 console.log(e.which);<!-- 左键按下返回 1 滚轮按下返回 2 右键按下返回 3 -->
 })
 {% endcodeblock %}
@@ -2439,7 +2439,7 @@ console.log(e.which);<!-- 左键按下返回 1 滚轮按下返回 2 右键按下
 {% endblockquote %}
 {% asset_img 28.png%}
 {% codeblock  %}
-\$(document).contextmenu(function () {
+$(document).contextmenu(function () {
 return false;
 })
 {% endcodeblock %}
@@ -2523,7 +2523,7 @@ $('input').focus(function () {
 
 失去焦点的时候 input 框里内容发生改变触发的事件</font></left>
 {% codeblock  %}
-\$('input').change(function () {
+$('input').change(function () {
 console.log('改变');
 })
 {% endcodeblock %}

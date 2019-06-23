@@ -2736,6 +2736,14 @@ hexo-generator-index@^0.2.1:
     hexo-pagination "0.0.2"
     object-assign "^4.0.1"
 
+hexo-generator-search@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.npm.taobao.org/hexo-generator-search/download/hexo-generator-search-2.4.0.tgz#f5abbbbbe35299f52c2554bb89845d0a4fab6c9b"
+  integrity sha1-9au7u+NSmfUsJVS7iYRdCk+rbJs=
+  dependencies:
+    nunjucks "^3.0.1"
+    utils-merge "^1.0.0"
+
 hexo-generator-searchdb@^1.0.8:
   version "1.0.8"
   resolved "https://registry.npm.taobao.org/hexo-generator-searchdb/download/hexo-generator-searchdb-1.0.8.tgz#04245256e1413a66313932dbf1c0a7e568559301"
@@ -4249,7 +4257,7 @@ number-is-nan@^1.0.0:
   resolved "https://registry.npm.taobao.org/number-is-nan/download/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nunjucks@^3.0.0, nunjucks@^3.1.2:
+nunjucks@^3.0.0, nunjucks@^3.0.1, nunjucks@^3.1.2:
   version "3.2.0"
   resolved "https://registry.npm.taobao.org/nunjucks/download/nunjucks-3.2.0.tgz#53e95f43c9555e822e8950008a201b1002d49933"
   integrity sha1-U+lfQ8lVXoIuiVAAiiAbEALUmTM=
