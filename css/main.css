@@ -1416,7 +1416,7 @@ pre code {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #9d26c9;
+  background: #73e3ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2862,6 +2862,34 @@ body {
 .pace .pace-progress {
   background: rgba(255,103,0,0.9) !important;
 }
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-size: cover;
+  cursor: pointer;
+}
+.icon-16 {
+  width: 16px;
+  height: 16px;
+  vertical-align: -2px;
+  margin-right: 5px;
+}
+.icon-32 {
+  width: 32px;
+  height: 32px;
+}
+.icon-books {
+  background: url("/images/books.png") no-repeat;
+  background-size: cover;
+}
+.icon-right {
+  background: url("/images/right.png") no-repeat;
+  background-size: cover;
+}
+.icon-down {
+  background: url("/images/down.png") no-repeat;
+  background-size: cover;
+}
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -2917,6 +2945,21 @@ body {
 .sidebar-inner,
 .site-state-item-name {
   color: #444342;
+}
+.popular-posts {
+  display: none;
+}
+.popular-posts-header {
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.show-books {
+  margin: 0;
+  margin-left: 30px;
+}
+.popular-posts {
+  margin: 0;
+  margin-left: 30px;
+  list-style: lower-latin;
 }
 .site-brand-container {
   background: rgba(0,0,0,0.7);
@@ -3262,11 +3305,10 @@ body {
   max-width: 45em;
   margin: 2.8em auto 0;
   padding: 0.5em 1em;
-  border: 1px solid #d3d3d3;
   font-size: 0.93rem;
   line-height: 1.6em;
   word-break: break-all;
-  background: rgba(255,255,255,0.4);
+  border-left: 3px solid #ff6700;
 }
 .my_post_copyright p {
   margin: 0;
@@ -3274,7 +3316,7 @@ body {
 .my_post_copyright span {
   display: inline-block;
   width: 5.2em;
-  color: #b5b5b5;
+  color: #444342;
   font-weight: bold;
 }
 .my_post_copyright .raw {
