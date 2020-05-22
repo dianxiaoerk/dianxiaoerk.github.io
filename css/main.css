@@ -1416,7 +1416,7 @@ pre code {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #73e3ff;
+  background: #ac4eff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2182,6 +2182,41 @@ pre code {
   max-width: 100%;
   width: 180px;
 }
+#qr div:hover p {
+  animation: roll 0.1s infinite linear;
+}
+@-moz-keyframes roll {
+  from {
+    transform: rotateZ(30deg);
+  }
+  to {
+    transform: rotateZ(-30deg);
+  }
+}
+@-webkit-keyframes roll {
+  from {
+    transform: rotateZ(30deg);
+  }
+  to {
+    transform: rotateZ(-30deg);
+  }
+}
+@-o-keyframes roll {
+  from {
+    transform: rotateZ(30deg);
+  }
+  to {
+    transform: rotateZ(-30deg);
+  }
+}
+@keyframes roll {
+  from {
+    transform: rotateZ(30deg);
+  }
+  to {
+    transform: rotateZ(-30deg);
+  }
+}
 .category-all-page .category-all-title {
   text-align: center;
 }
@@ -2844,6 +2879,12 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+* {
+  cursor: url("/images/cursor/SizeNWSE.cur"), auto;
+}
+:link {
+  cursor: url("/images/cursor/Arrow.cur"), auto;
+}
 :root {
   --table-row-odd-bg-color: transparent;
   --body-bg-color: transparent;
@@ -2866,7 +2907,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   background-size: cover;
-  cursor: pointer;
+  cursor: url("/images/cursor/Arrow.cur"), auto;
 }
 .icon-16 {
   width: 16px;
@@ -2960,6 +3001,62 @@ body {
   margin: 0;
   margin-left: 30px;
   list-style: lower-latin;
+}
+.read-over {
+  text-align: center;
+  color: #ff6700;
+}
+.post-tags a {
+  padding: 0 10px;
+  border: 0;
+  box-shadow: 0 0 5px #ff6700;
+}
+.post-tags a:hover {
+  animation: fade 1s forwards;
+}
+@-moz-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .site-brand-container {
   background: rgba(0,0,0,0.7);
@@ -3348,7 +3445,7 @@ body {
 }
 .my_post_copyright .copy-path:hover {
   color: #808080;
-  cursor: pointer;
+  cursor: url("/images/cursor/Arrow.cur"), auto;
 }
 .moon-menu,
 .moon-menu-bg,

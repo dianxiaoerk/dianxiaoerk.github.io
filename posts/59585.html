@@ -77,6 +77,7 @@
 </noscript>
 
   <link rel="stylesheet" href="/lib/dist/css/share.min.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.0/animate.compat.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
 
 </head>
@@ -87,7 +88,6 @@
 
   <div class="container use-motion">
     <div class="headband"></div>
-
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
@@ -230,7 +230,38 @@
       
 
 
+  <div>
+        
+          <div>
+    
+        <div class="read-over">----------本文结束 <i class="fa fa-paw"></i> 感谢您的阅读----------</div>
+    
+</div>
+
+        
+       </div>
+        <div class="reward-container">
+  <div>坚持原创技术分享，感谢您的支持和鼓励！</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="John Doe 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="John Doe 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
     <div>
+
    <div>
            
              
@@ -239,10 +270,12 @@
      </div>
   
   
+
  </div>
       <footer class="post-footer">
 
         
+
 
 
         
@@ -609,13 +642,15 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
   </div>
 </div><script src="/js/injector.js"></script>
     </div>
-  <script src="https://player.lmih.cn/player/js/player.js" id="myhk" key="158927647720" m="1"></script>
+  <script async  src="https://player.lmih.cn/player/js/player.js" id="myhk" key="158927647720" m="1"></script>
   <script>
   $('.musicheader').hide()
   </script>
-
 </body>
 <!--崩溃欺骗-->
+<script async src="/js/cursor/love.min.js"></script>
 <script type="text/javascript" src="/js/custom/crash_cheat.js"></script>
 <script src="/js/custom/utils.js"></script>
 </html>
+  
+
