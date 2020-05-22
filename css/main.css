@@ -1416,7 +1416,7 @@ pre code {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ac4eff;
+  background: #ffa26c;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2880,7 +2880,7 @@ body {
   background-attachment: fixed;
 }
 * {
-  cursor: url("/images/cursor/SizeNWSE.cur"), auto;
+  cursor: url("/images/cursor/Link.cur"), auto;
 }
 :link {
   cursor: url("/images/cursor/Arrow.cur"), auto;
