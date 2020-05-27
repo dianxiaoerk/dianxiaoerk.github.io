@@ -23,15 +23,15 @@ $(function(){
   })
 
   //标题添加动画效果
-
-  $('.post-header .post-title').mouseenter(function(e){
-    e.stopPropagation();
-    $(this).addClass('animated wobble')
-  })
-  $('.post-header').mouseleave(function(e){
-    e.stopPropagation();
-    $('.post-header .post-title').removeClass('animated wobble')
-  })
+  //
+  // $('.post-header .post-title').mouseenter(function(e){
+  //   e.stopPropagation();
+  //   $(this).addClass('animated wobble')
+  // })
+  // $('.post-header').mouseleave(function(e){
+  //   e.stopPropagation();
+  //   $('.post-header .post-title').removeClass('animated wobble')
+  // })
 
   //sidebar标题动画
   $('.header-inner .site-title').mouseenter(function(e){
@@ -41,5 +41,18 @@ $(function(){
   $('.site-brand-container').mouseleave(function(e){
     e.stopPropagation();
     $('.header-inner .site-title').removeClass('animated rubberBand')
+  })
+
+  //头像动画
+
+  $('.site-author-image').mouseenter(function(e){
+    e.stopPropagation();
+    $('.site-author-image').removeClass('animated bounceIn')
+    $(this).addClass('animated bounceOut')
+  })
+  $('.site-author').mouseleave(function(e){
+    e.stopPropagation();
+    $('.site-author-image').removeClass('animated bounceOut')
+    $('.site-author-image').addClass('animated bounceIn')
   })
 })
