@@ -4,7 +4,7 @@ $(function(){
   //文章底部标签添加动画效果
  $('.post-tags a').mouseenter(function(e){
    e.stopPropagation();
-   $('.post-tags a').removeClass('animated flipInY')
+   $(this).siblings('a').removeClass('animated flipInY')
    $(this).addClass('animated flipInY');
  })
   $('.post-footer').mouseleave(function(e){
