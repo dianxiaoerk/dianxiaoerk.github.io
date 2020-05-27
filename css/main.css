@@ -1416,7 +1416,7 @@ pre code {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #8f6ff6;
+  background: #b0833b;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3209,7 +3209,7 @@ summary {
 .v[data-class=v] .vwrap .vedit {
   position: relative;
 }
-#clock {
+#clockBox {
   width: 300px;
   position: absolute;
   font: 15px/1.3 Arial, sans-serif;
@@ -3218,7 +3218,6 @@ summary {
   transform: scale(0.8);
   bottom: -130px;
   left: -29px;
-  box-shadow: 0 5px 4px -4px #000;
 }
 #clock .display {
   text-align: center;
