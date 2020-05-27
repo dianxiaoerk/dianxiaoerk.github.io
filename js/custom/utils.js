@@ -15,11 +15,13 @@ $(function(){
   //时钟添加动画效果
   $('#clock').mouseenter(function(e){
     e.stopPropagation();
+    $(this).removeClass('animated rollIn')
     $(this).addClass('animated hinge')
   })
   $('.sidebar-inner').mouseleave(function(e){
     e.stopPropagation();
     $('#clock').removeClass('animated hinge')
+    $('#clock').addClass('animated rollIn')
   })
 
   //标题添加动画效果
