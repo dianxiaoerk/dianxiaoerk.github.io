@@ -1,27 +1,17 @@
 
 //所有动画均采用animate.css动画库实现
 $(function(){
-  //文章底部标签添加动画效果
- $('.post-tags a').mouseenter(function(e){
-   e.stopPropagation();
-   $(this).siblings('a').removeClass('animated flipInY')
-   $(this).addClass('animated flipInY');
- })
-  $('.post-footer').mouseleave(function(e){
-    e.stopPropagation()
-    $('.post-tags a').removeClass('animated flipInY')
-  })
 
   //时钟添加动画效果
-  $('#clock').mouseenter(function(e){
+  $('#clock .digits').mouseenter(function(e){
     e.stopPropagation();
     $(this).removeClass('animated rollIn')
     $(this).addClass('animated hinge')
   })
   $('.sidebar-inner').mouseleave(function(e){
     e.stopPropagation();
-    $('#clock').removeClass('animated hinge')
-    $('#clock').addClass('animated rollIn')
+    $('#clock .digits').removeClass('animated hinge')
+    $('#clock .digits').addClass('animated rollIn')
   })
 
   //标题添加动画效果
