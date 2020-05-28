@@ -35,6 +35,17 @@ $(function(){
     $('.header-inner .site-title').removeClass('animated rubberBand')
   })
 
+
+  //文章标题添加动画
+  $('.post-title').mouseenter(function(e){
+    e.stopPropagation();
+    $(this).addClass('animated rubberBand')
+  })
+  $('.post-header').mouseleave(function(e){
+    e.stopPropagation();
+    $('.post-title').removeClass('animated rubberBand')
+  })
+
   //头像动画
 
   $('.site-author-image').mouseenter(function(e){
